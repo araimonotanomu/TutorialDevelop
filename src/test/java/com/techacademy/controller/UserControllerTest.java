@@ -73,7 +73,7 @@ class UserControllerTest {
                 .andReturn();
         
         List<User> userlist = (List<User>)result.getModelAndView().getModel().get("userlist");
-        assertEquals(15, userlist.size());
+        assertEquals(3, userlist.size());
         assertEquals(1, userlist.get(0).getId());
         assertEquals(2, userlist.get(1).getId());
         assertEquals(3, userlist.get(2).getId());
